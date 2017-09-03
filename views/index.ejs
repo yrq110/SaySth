@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SaySth</title>
+  <!-- <link rel="stylesheet" href="/css/main.css" /> -->
+</head>
+<body>
+  <div id="localDiv">
+    <audio id="localAudio" controls autoplay muted></audio>
+    <div id="meters">
+      <div id="localInstant">
+        <div class="label">Instant: </div>
+        <meter high="0.25" max="1" value="0"></meter>
+        <div class="value"></div>
+      </div>
+    </div>
+  </div>
+  <div id="remoteDiv">
+    <audio id="remoteAudio" controls autoplay muted></audio>
+    <div id="meters">
+      <div id="remoteInstant">
+        <div class="label">Instant: </div>
+        <meter high="0.25" max="1" value="0"></meter>
+        <div class="value"></div>
+      </div>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="javascripts/lib/adapter.js"></script>
+  <script src="javascripts/soundmeter.js"></script>
+  <script src="javascripts/main.js"></script>
+</body>
+</html>
